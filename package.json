@@ -1,26 +1,14 @@
 {
-	"name": "CodeCampAPI",
-	"author": "Tiaan van Staden",
-	"description": "A project that does something awesome",
-	"keywords": ["descriptive", "related", "words", "freecodecamp"],
-	"version": "1.2.0",
-	"main": "server.js",
+	"name": "fcc-learn-node-with-express",
+	"version": "0.1.0",
 	"dependencies": {
-	  "express": "^4.18.1"
+		"express": "^4.14.0",
+		"body-parser": "^1.15.2",
+		"cookie-parser": "^1.4.3",
+		"fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
 	},
-	"devDependencies": {},
+	"main": "server.js",
 	"scripts": {
-	  "test": "echo \"Error: no test specified\" && exit 1",
-	  "start": "node server.js"
-	},
-	"repository": {
-	  "type": "git",
-	  "url": "git+https://github.com/Tiaan-van-Staden/CodeCampAPI.git"
-	},
-	"license": "MIT",
-	"bugs": {
-	  "url": "https://github.com/Tiaan-van-Staden/CodeCampAPI/issues"
-	},
-	"homepage": "https://github.com/Tiaan-van-Staden/CodeCampAPI#readme"
-  }
-  
+		"start": "node server.js"
+	}
+}
