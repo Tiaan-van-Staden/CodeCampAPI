@@ -8,6 +8,14 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/views/index.html')
 })
 
+app.get('/now', function again(req, res, next){
+  req.time = new Date().toString()
+  next();
+}, (req, res) => {
+  res.json(req.time)
+  console.log(req.time)
+})
+
 app.get('/json', function(req, res){
   if(process.env['MESSAGE_STYLE'] === "uppercase")
   {
